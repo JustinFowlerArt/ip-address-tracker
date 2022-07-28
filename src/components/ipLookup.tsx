@@ -17,7 +17,7 @@ export const IpLookup = ({ search, handleChange, handleSubmit }: Props) => {
 				placeholder='Search for any IP address or domain'
 				onChange={e => handleChange(e.target.value)}
 			></input>
-			<button className='absolute right-0 h-full aspect-square bg-black p-2 rounded-r-xl'>
+			<button className='absolute right-0 h-full aspect-square bg-black p-2 rounded-r-xl hover:opacity-75'>
 				<img className='mx-auto' src='/images/icon-arrow.svg'></img>
 			</button>
 		</form>
