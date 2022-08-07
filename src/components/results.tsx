@@ -7,7 +7,7 @@ interface Props {
 export const Results = ({ data }: Props) => {
 	return (
 		<div className='relative flex flex-col justify-between items-center p-5 w-full rounded-xl h-64 bg-white lg:divide-x lg:w-3/4 lg:flex-row lg:items-start lg:text-left lg:p-6 lg:drop-shadow-lg z-10'>
-			<div className='space-y-1 lg:pr-6 xl:pr-10'>
+			<div className='space-y-1 lg:pr-6 lg:w-1/4'>
 				<h2 className='text-[.6rem] text-dark-gray font-medium tracking-widest'>
 					IP ADDRESS
 				</h2>
@@ -15,7 +15,7 @@ export const Results = ({ data }: Props) => {
 					{data.ip}
 				</h3>
 			</div>
-			<div className='space-y-1 lg:px-6 xl:px-10'>
+			<div className='space-y-1 lg:px-6 lg:w-1/4'>
 				<h2 className='text-[.6rem] text-dark-gray font-medium tracking-widest'>
 					LOCATION
 				</h2>
@@ -24,7 +24,7 @@ export const Results = ({ data }: Props) => {
 					${data.location.postalCode}`}
 				</h3>
 			</div>
-			<div className='space-y-1 lg:px-6 xl:px-10'>
+			<div className='space-y-1 lg:px-6 lg:w-1/4'>
 				<h2 className='text-[.6rem] text-dark-gray font-medium tracking-widest'>
 					TIMEZONE
 				</h2>
@@ -32,7 +32,7 @@ export const Results = ({ data }: Props) => {
 					{`UTC ${data.location.timezone}`}
 				</h3>
 			</div>
-			<div className='space-y-1 lg:pl-6 xl:pl-10'>
+			<div className='space-y-1 lg:pl-6 lg:w-1/4'>
 				<h2 className='text-[.6rem] text-dark-gray font-medium tracking-widest'>
 					ISP
 				</h2>

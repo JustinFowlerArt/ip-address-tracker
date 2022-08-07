@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import { iIpAddress } from './interfaces';
 
@@ -7,20 +6,10 @@ interface Props {
 }
 
 export const Map = ({ data }: Props) => {
-	const latRef = useRef(data.location.lat);
-	const latValue = latRef.current;
-
-	const lngRef = useRef(data.location.lng);
-	const lngValue = latRef.current;
-
-	useEffect(() => {
-		latRef.current = data.location.lat;
-		lngRef.current = data.location.lng;
-	}, [data]);
-
 	return (
 		<MapContainer
-			center={[latValue, lngValue]}
+            key={data.ip}
+			center={[data.location.lat + .01, data.location.lng]}
 			zoom={13}
 			zoomControl={false}
 			scrollWheelZoom={false}
