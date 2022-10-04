@@ -6,7 +6,7 @@ import { Map } from './map';
 import mockData from '../api/mockData.json';
 import { useFetch } from '../hooks/useFetch';
 
-const apiKey = process.env.REACT_APP_IPIFY_GEO_API_KEY;
+const apiKey = process.env.REACT_APP_IPIFY_GEO_API_KEY ?? '' ;
 
 export const AddressTracker = () => {
 	const [search, setSearch] = useState('');
