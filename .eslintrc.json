@@ -30,12 +30,5 @@
 		"no-new-func": "error",
 		"react/prop-types": "warn",
 		"react/react-in-jsx-scope": "off"
-	},
-	"ignorePatterns": [
-		"**/*.html",
-		"**/*.css",
-		"**/*.jpg,",
-		"**/*.png",
-		"**/*.svg"
-	]
+	}
 }
