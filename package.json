@@ -10,7 +10,8 @@
 		"lint:watch": "npm run lint -- --watch",
 		"clean-dist": "rimraf ./dist && mkdir dist",
 		"prebuild": "npm-run-all clean-dist lint",
-		"build": "babel-node buildScripts/build.js"
+		"build": "babel-node buildScripts/build.js",
+		"serve": "serve dist"
 	},
 	"author": "Justin Fowler",
 	"license": "MIT",
@@ -60,6 +61,7 @@
 		"postcss-cli": "^9.1.0",
 		"postcss-loader": "^7.0.0",
 		"rimraf": "3.0.2",
+		"serve": "^14.0.1",
 		"style-loader": "3.3.1",
 		"tailwindcss": "^3.0.24",
 		"ts-loader": "^9.3.0",

@@ -4,6 +4,7 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 export default {
 	mode: 'production',
@@ -55,6 +56,7 @@ export default {
 				},
 			},
 		}),
+		new Dotenv(),
 	],
 	module: {
 		rules: [
