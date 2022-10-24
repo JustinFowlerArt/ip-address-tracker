@@ -7,6 +7,7 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -30,6 +31,10 @@ Users should be able to:
 
 ![](./design/final-mobile.png)
 ![](./design/final-desktop.png)
+
+### Links
+- Solution URL: [Solution URL](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0/hub/ip-address-tracker-with-react-typescript-tailwind-and-fetch-cNvmEhqzQa)
+- Live Site URL: [Live Site URL](https://ip-address-tracker.justinfowlerart.com/)
 
 ## My process
 

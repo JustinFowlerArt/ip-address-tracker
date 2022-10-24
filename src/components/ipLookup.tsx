@@ -18,7 +18,7 @@ export const IpLookup = ({ search, handleChange, handleSubmit }: Props) => {
 				onChange={e => handleChange(e.target.value)}
 			></input>
 			<button className='absolute right-0 h-full aspect-square bg-black p-2 rounded-r-xl hover:opacity-75'>
-				<img className='mx-auto' src='/images/icon-arrow.svg'></img>
+				<img className='mx-auto' src='/images/icon-arrow.svg' alt='Search'/>
 			</button>
 		</form>
 	);
